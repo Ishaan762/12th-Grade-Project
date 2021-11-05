@@ -1,4 +1,4 @@
-import mysql.connector as co              #for sql connectivity
+	import mysql.connector as co              #for sql connectivity
 	from prettytable import PrettyTable     #to print output in tabular form
 	import random                   #to generate fee id and admission numbers
 	from datetime import date     #for using in fee receipt
@@ -19,8 +19,6 @@ import mysql.connector as co              #for sql connectivity
 	    box += f'╚{"═" * (width + indent * 2)}╝'  # lower_border
 	    print(box)
 	
-
-	'''anshul begin'''
 	#report card generator
 	def viewer1():
 	    try:
@@ -84,10 +82,10 @@ import mysql.connector as co              #for sql connectivity
 	    else:
 	        an="Result: FAIL"
 	        print_msg_box(an)
-	'''anshul end'''
+	 
 	
 
-	'''ishaan begins'''
+	 
 	#for adding records to admission table
 	def admin_details():
 	    try:
@@ -300,12 +298,11 @@ import mysql.connector as co              #for sql connectivity
 	    print("Success") 
 	    cm=input("press any key to continue\n")
 	    print(cm)
-	'''ishaan ends'''
+	 
 	
 
 	#student table begins
 	#student database interaction interface
-	'''anshul begins again'''
 	def Studentmenu():
 	    while True:
 	        print("\t\t............................")
@@ -413,10 +410,10 @@ import mysql.connector as co              #for sql connectivity
 	        print("error")
 	        cm=input("press any key to continue\n")
 	        print(cm)
-	'''anshul ends'''
+	 
 	
 
-	'''saransh begins'''
+	 
 	def Search_Stu_Details():
 	    mycon=co.connect(host="localhost", user="root", passwd="1234", database="Project")  
 	    cursor=mycon.cursor()
@@ -459,11 +456,11 @@ import mysql.connector as co              #for sql connectivity
 	    except:
 	        print("Error")
 	        cm=input("press any key to continue\n")
-	        print(cm)
-	'''saransh ends'''
+	        print(cm) 
+		
 	
 
-	'''ishaan begins'''
+	
 	#student database editing interface
 	def Edit_Stu_Details():
 	    try:
@@ -656,10 +653,10 @@ import mysql.connector as co              #for sql connectivity
 	    print ('Data updated successfully')
 	    cm=input("press any key to continue\n")
 	    print(cm)
-	'''ishaan ends'''
+	 
 	
 
-	'''saransh begins'''
+	 
 	#function for navigating feemenu   
 	def Feemenu():    
 	    fc=int(input('''What would you like to do
@@ -817,10 +814,10 @@ import mysql.connector as co              #for sql connectivity
 	        print("Record not found")
 	        cm=input("press any key to continue\n")
 	        print(cm)
-	'''saransh ends'''
+	 
 	
 
-	'''ishaan begins'''
+	 
 	#main program for choosing required submenu
 	while True:
 	    print("\t\tWelcome to School Management System\t\t")
